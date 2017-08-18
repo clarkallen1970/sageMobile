@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	<title>SageBistro Mobile </title>
+	<link href='http://fonts.googleapis.com/css?family=Marvel' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="_css/custom.css" />
+	<link rel="stylesheet" href="_includes/bistroSurvey.min.css" />
+	<link rel="stylesheet" href="_includes/jquery.mobile.icons.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="jquery.validate.js"></script>
+</head>
+<body>
+<div data-role="page" id="home">
+	<div data-role="header" data-position="fixed" data-position="inline">
+		<img src="_images/header.jpg" alt="Sage Bistro header">
+	</div><!--Closing Header Div -->
+	
+	<div data-role="content">
+		
+		
+		<p>We are a customer focused classroom, giving our students the chance to hone their culinary, bakery, service, and management skills.</p>
+		<p>We offer a standard menu, as well as weekly specials during dinner.  Reservations are strongly encouraged for dinner service.</p>
+		
+		<ul data-role="listview" data-inset="true">
+			<li><a href="#mapUs">Find Us</a></li>
+			<li><a href="#menu"> Download Menu</a></li>
+			<li><a href="#reserve">Make Reservations</a></li>
+			<li><a href="#bistroSurvey">Tell Us What You Thought</a></li>
+		</ul>
+		
+	
+	
+	</div><!--Closing Content Div -->
+	<div date-role="footer" data-position="fixed">
+		<h4>Created by <a href="mailto:aclark49@mail.mccneb.edu">Allen Clark</a></h4>
+	</div><!--Closing Footer Div -->
+	
+	</div><!--Closing Page Div -->
+	
+<div data-role="page" id="mapUs">
+	<div data-role="header" data-position="fixed">
+	<a href="#home" data-icon="home" data-mini="true">Home</a>	
+	<img src="_images/header.jpg" alt="Sage Bistro header">
+	</div><!--Closing Header Div -->
+	<div data-role="content">
+	
+	<p>
+	MCC Sage Student Bistro</br>
+	5730 North 30th Street</br>
+	Omaha, NE</br>
+	68111
+	</p>
+	
+	
+	<p>
+		<img src="https://maps.googleapis.com/maps/api/staticmap?center=41.30456,-95.959561&amp;zoom=15&amp;size=150x150&scale=2&amp;type=roadmaps&amp;markers=color:0xd64044%7 Clabel:N%7C41.30456,-95.959561&amp;sensor=true">
+	</p>
+	</div><!--Closing Content Div -->
+	
+	<div date-role="footer" data-position="fixed">
+		<h4>Created by <a href="mailto:aclark49@mail.mccneb.edu">Allen Clark</a></h4>
+	</div><!--Closing Footer Div -->
+
+	</div><!--Closing Page Div -->
+<div data-role="page" id="menu">
+	<div data-role="header" data-position="fixed">
+	<a href="#home" data-icon="home" data-mini="true">Home</a>
+	<img src="_images/header.jpg" alt="Sage Bistro header">
+	</div><!--Closing Header Div -->
+	<div data-role="content">
+	<h2>Menu Options</h2>
+			
+	<ul data-role="listview" data-inset="true">
+			<li><a href="_includes/bDinner.docx">Bistro Lunch</a></li>
+			<li><a href="_includes/bLunch.docx">Bistro Dinner</a></li>
+			<li><a href="#studentPrix">Student Prix Fixe Dinner</a></li>
+		</ul>
+	</div><!--Closing Content Div -->
+	
+	<div date-role="footer" data-position="fixed">
+		<h4>Created by <a href="mailto:aclark49@mail.mccneb.edu">Allen Clark</a></h4>
+	</div><!--Closing Footer Div -->
+	</div><!--Closing Page Div-->
+	
+<div data-role="page" id="studentPrix">
+	<div data-role="header" data-position="fixed">
+	<a href="#home" data-icon="home" data-mini="true">Home</a>
+	<img src="_images/header.jpg" alt="Sage Bistro header">
+	</div><!--Closing Header Div -->
+<div data-role="content">	
+	<ul data-role="listview" data-inset="true">
+			<li><a href="_includes/jChild.docx">April 18th-21st~Inspired by Julia Child</a></li>
+			<li><a href="_includes/pBocuse.docx">April 25th-28th~Inspired by Paul Bocuse</a></li>
+			<li><a href="_includes/jRobuchon.docx">May 2nd-5th~Inspried by Joel Robuchon</a></li>
+		</ul>
+	</div><!--Closing Content Div -->
+	
+	<div date-role="footer" data-position="fixed">
+		<h4>Created by <a href="mailto:aclark49@mail.mccneb.edu">Allen Clark</a></h4>
+	</div><!--Closing Footer Div -->
+	</div><!--Closing Page Div-->
+
+	<div data-role="page" id="reserve">
+	<div data-role="header" data-position="fixed">
+	<a href="#home" data-icon="home" data-mini="true">Home</a>
+	<img src="_images/header.jpg" alt="Sage Bistro header">
+	</div><!--Closing Header Div -->
+	
+	<div data-role="content">
+	
+	<h2>Make A Reservation</h2>
+	
+	<p>To make a reservation,<a href="tel:14024572328"> Call Us </a> or submit the form below</p>
+	
+	<form method="post" action="SageMobileReserve.php">
+	
+	<div data-role="fieldcontain">
+	<label for="rname">Name:</label>
+	<input type="text" name="rname" id="rname" value="" />
+	</div><!--Closing Fieldcontain Div-->
+	
+	<div data-role="fieldcontain">
+	<label for="email">Email:</label>
+	<input type="text" name="email" id="email" value="" />
+	</div><!--Closing Fieldcontain Div-->	
+	
+	<div data-role="fieldcontain">
+	<fieldset data-role="controlgroup">
+	<legend>Are you coming for Lunch or Dinner?</legend>
+	<input type="radio" name="lunchDinner"
+	id="lunchDinner1" value="Lunch">
+	<label for="lunchDinner1">Lunch</label>
+	<input type="radio" name="lunchDinner"
+	id="lunchDinner2" value="Dinner">
+	<label for="lunchDinner2">Dinner</label>
+	<input type="radio" name="lunchDinner"
+	id="lunchDinner3" value="Prix Fixe Dinner">
+	<label for="lunchDinner3">Prix Fixe Dinner</label>
+	</fieldset>
+	</div><!--Closing Fieldcontain Div-->
+	
+	<p>Lunch Served Mon-Thurs. from 11pm-1pm</p>
+	<p>Dinner Served Mon-Thurs. from 6pm-8pm</p>
+	
+	<div data-role="fieldcontain">
+		<label for="rDate">What Date Would You Like To Eat</label>
+		<select name="rDate" id="rDate">
+		<option value="March">March</option>
+		<option value="April">April</option>
+		<option value="May">May</option>
+		</select>
+	</div><!--Closing Fieldcontain Div-->
+	
+	<div data-role="fieldcontain">
+		<label for="rDay">Date</label>
+		<input type="range" name="rDay" id="rDay" min="1"
+		max="31"
+		value="1" data-highlight="true">
+	</div><!--Closing Fieldcontain Div-->
+	
+	<div data-role="fieldcontain">
+		<label for="rHour">Hour</label>
+		<input type="range" name="rHour" id="rHour" min="1"
+		max="12"
+		value="1" data-highlight="true">
+	</div><!--Closing Fieldcontain Div-->
+	
+	<div data-role="fieldcontain">
+		<label for="rMin">Minute</label>
+		<input type="range" name="rMin" id="rMin" min="0"
+		max="59"
+		value="0" data-highlight="true">
+	</div><!--Closing Fieldcontain Div-->	
+	
+	<div data-role="fieldcontain">
+		<input type="submit" name="submit" value="Send" />
+	</div><!--Closing Fieldcontain Div-->
+</form>	
+</div><!--Closing Content Div-->
+<div date-role="footer" data-position="fixed">
+		<h4>Created by <a href="mailto:aclark49@mail.mccneb.edu">Allen Clark</a></h4>
+	</div><!--Closing Footer Div -->
+</div><!--Closing Page Div-->
+	
+		
+	<div data-role="page" id="bistroSurvey">
+	<div data-role="header" data-position="fixed">
+	<a href="#home" data-icon="home" data-mini="true">Home</a>
+	<img src="_images/header.jpg" alt="Sage Bistro header">
+	</div><!--Closing Header Div -->
+	
+	<div data-role="content">	
+		
+		<h2>Bistro Customer Survey</h2>
+
+<form method="post" action="bistrosurvey_insert.php" form name="surveyForm" nonvalidate >
+
+<div data-role="fieldcontain">
+	<label for="meal_rate">How would you rate your meal today?</label>
+	<select name="meal_rate" id="meal_rate">
+		<option value="poor">1-Poor</options>
+		<option value="Needs Work">2-Needs Work</options>
+		<option value="Fair">3-Fair</options>
+		<option value="Good">4-Good</options>
+		<option value="Excellent">5-Excellent</options>
+	</select>
+</div><!--Closing Fieldcontain Div-->
+
+<div data-role="fieldcontain">
+	<label for="service_rate">How would you rate your service today?</label>
+	<select name="service_rate" id="service_rate">
+		<option value="poor">1-Poor</options>
+		<option value="Needs Work">2-Needs Work</options>
+		<option value="Fair">3-Fair</options>
+		<option value="Good">4-Good</options>
+		<option value="Excellent">5-Excellent</options>
+	</select>
+</div><!--Closing Fieldcontain Div-->
+
+<div data-role="fieldcontain">
+	<label for="overall_exp">How would you rate your overall experience today?</label>
+	<select name="overall_exp" id="overall_exp">
+		<option value="poor">1-Poor</options>
+		<option value="Needs Work">2-Needs Work</options>
+		<option value="Fair">3-Fair</options>
+		<option value="Good">4-Good</options>
+		<option value="Excellent">5-Excellent</options>
+	</select>
+</div><!--Closing Fieldcontain Div-->
+
+<div data-role="fieldcontain">
+	<fieldset data-role="controlgroup" data-type="horizontal">
+		<legend>Would you recommend this restaurant to a friend?</legend>
+		<input type="checkbox" name="recommend_rest" id="recommend_rest1" value="Yes">
+		<label for="recommend_rest1">Yes</label>
+		<input type="checkbox" name="recommend_rest" id="recommend_rest2" value="No">
+		<label for="recommend_rest2">No</label>
+	</fieldset>
+</div><!--Closing Fieldcontain Div-->
+
+<div data-role="fieldcontain">
+	<label for="bname">Name: <span>(required)</span></label>
+	<input type="text" name="bname" id="bname" value="" / required>
+</div><!--Closing Fieldcontain Div-->
+<div data-role="fieldcontain">
+	<label for="email">Email: <span>(required)</span></label>
+	<input type="text" name="email" id="email" value="" / required>
+</div><!--Closing Fieldcontain Div-->
+
+<div data-role="fieldcontain">
+	<input type="submit" name="submit" value="Send" />
+</div><!--Closing Fieldcontain Div-->
+
+
+
+</form><!--Closing the Form-->
+<script>
+$("surveyForm").validate();
+</script>
+</div><!--Closing Content Div-->
+<div date-role="footer" data-position="fixed">
+		<h4>Created by <a href="mailto:aclark49@mail.mccneb.edu">Allen Clark</a></h4>
+	</div><!--Closing Footer Div -->	
+</div><!--Closing Page Div-->
+	
+</body>
+</html>
